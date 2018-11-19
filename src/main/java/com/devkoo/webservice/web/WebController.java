@@ -18,33 +18,25 @@ public class WebController { // 웹컨트롤러로써 GetMapping 이용해서 �
 
     // 메인뷰
     //fineAllDesc 가 오름차순으로 정렬해줄 것임
-    @RequestMapping(value="/index", method = {RequestMethod.GET, RequestMethod.POST})
-    public String index(Model model) {
-        model.addAttribute("posts", postsService.findAllDesc());
-        return "instagram";
-    }
 
     @RequestMapping(value="/", method = {RequestMethod.GET, RequestMethod.POST})
-    public String main(Model model) {
+    public String main(Model model){
         //model.addAttribute("posts", postsService.findAllDesc());
-        return "instagram";
+        return "main";
     }
 
-    @GetMapping("/instagram") // 웹에서 /hello 라는 요청이 있을경우
-    public String hello() {
-        return "instagram";
-    }
+
     // 회원가입 페이지
     @RequestMapping(value="signup", method = {RequestMethod.GET, RequestMethod.POST})
     public String signup(Model model){
-        model.addAttribute("posts", postsService.findAllDesc());
+        //model.addAttribute("posts", postsService.findAllDesc());
         return "signup";
     }
 
     // 로그인 페이지
     @RequestMapping(value="login", method = {RequestMethod.GET, RequestMethod.POST})
     public String login(Model model){
-        model.addAttribute("posts", postsService.findAllDesc());
+        //model.addAttribute("posts", postsService.findAllDesc());
         return "login";
     }
 
