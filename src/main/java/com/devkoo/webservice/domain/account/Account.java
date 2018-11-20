@@ -31,7 +31,7 @@ public class Account extends BaseTimeEntity{
     // 이값들이 null 이면 회원가입 안됨.
     @Column(columnDefinition = "TEXT", nullable = false)
     private String userid;
-    private String useremail;
+    //private String useremail;
     private String userpassword;
 
 
@@ -41,7 +41,7 @@ public class Account extends BaseTimeEntity{
     public Account(Long usernum, String userid, String useremail, String userpassword){
         this.usernum = usernum;
         this.userid = userid;
-        this.useremail = useremail;
+        //this.useremail = useremail;
         this.userpassword = userpassword;
     }
 }

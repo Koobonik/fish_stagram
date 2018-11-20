@@ -18,7 +18,7 @@ public class AccountMainResponseDto {
         usernum = entity.getUsernum();
         userid = entity.getUserid();
         userpassword = entity.getUserpassword();
-        useremail = entity.getUseremail();
+        //useremail = entity.getUseremail();
         modifiedDate = toStringDateTime(entity.getModifiedDate());
     }
 

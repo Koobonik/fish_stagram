@@ -15,13 +15,13 @@ public class AccountSaveRequestDto {
     private Long usernum;
     private String userid;
     private String userpassword;
-    protected String useremail;
+    //protected String useremail;
 
     @Builder
     public AccountSaveRequestDto(Long usernum, String userid, String useremail, String userpassword) {
         this.usernum = usernum;
         this.userid = userid;
-        this.useremail = useremail;
+        //this.useremail = useremail;
         this.userpassword = userpassword;
     }
 
@@ -29,7 +29,7 @@ public class AccountSaveRequestDto {
         return Account.builder()
                 .usernum(usernum)
                 .userid(userid)
-                .useremail(useremail)
+                //.useremail(useremail)
                 .userpassword(userpassword)
                 .build();
     }
