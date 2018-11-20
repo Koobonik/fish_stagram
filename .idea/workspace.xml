@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad9b2203-f085-493a-8509-3bcfb47a3702" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.5.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.5.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.5.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.5.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.5.1/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.5.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.5.1/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main.hbs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -51,11 +46,11 @@
         <counts>
           <entry key="hbs" value="10" />
           <entry key="html" value="4" />
-          <entry key="java" value="17" />
+          <entry key="java" value="18" />
           <entry key="jpg" value="2" />
           <entry key="js" value="13" />
           <entry key="png" value="2" />
-          <entry key="yml" value="1" />
+          <entry key="yml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -63,14 +58,14 @@
           <entry key="HTML" value="4" />
           <entry key="Handlebars/Mustache" value="10" />
           <entry key="Image" value="4" />
-          <entry key="JAVA" value="17" />
+          <entry key="JAVA" value="18" />
           <entry key="JavaScript" value="13" />
-          <entry key="YAML" value="1" />
+          <entry key="YAML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="hbs" value="326" />
+          <entry key="hbs" value="357" />
           <entry key="html" value="3" />
           <entry key="java" value="172" />
           <entry key="js" value="24" />
@@ -79,7 +74,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="3" />
-          <entry key="Handlebars/Mustache" value="326" />
+          <entry key="Handlebars/Mustache" value="357" />
           <entry key="JAVA" value="172" />
           <entry key="JavaScript" value="24" />
         </counts>
@@ -89,10 +84,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/devkoo/webservice/web/WebController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="38" column="66" lean-forward="true" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/app/signup.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="465">
               <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -120,41 +136,26 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/로그인 • Instagram_files/350b5e8f3dde.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret column="1029605" lean-forward="true" selection-start-column="1029605" selection-end-column="1029605" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/main.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="219" column="568" selection-start-line="219" selection-start-column="563" selection-end-line="219" selection-end-column="568" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="219" column="5317" selection-start-line="219" selection-start-column="5317" selection-end-line="219" selection-end-column="5317" />
+            <state relative-caret-position="326">
+              <caret line="219" column="2906" selection-start-line="219" selection-start-column="2906" selection-end-line="219" selection-end-column="2906" />
               <folding>
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#article#0;n#div#0;n#main#0;n#section#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#article#0;n#main#0;n#section#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/로그인 • Instagram_files/fbevents.js">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="199">
+              <caret line="219" column="1231" lean-forward="true" selection-start-line="219" selection-start-column="1143" selection-end-line="219" selection-end-column="1231" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#article#0;n#div#0;n#main#0;n#section#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -195,7 +196,6 @@
       <find>coreSpriteLoggedOutWordmark</find>
       <find>accounts/login/</find>
       <find>a href=&quot;</find>
-      <find>가입</find>
       <find>div class=&quot;yOZJD _8</find>
       <find>img</find>
       <find>/img</find>
@@ -203,7 +203,11 @@
       <find>hmkte</find>
       <find>head</find>
       <find>facebook으로</find>
+      <find>app store</find>
       <find>gr27e</find>
+      <find>휴대폰 번호</find>
+      <find>성명</find>
+      <find>가입</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -579,7 +583,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.hbs" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/instagram.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/devkoo/webservice/web/WebController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/main.hbs" />
         <option value="$PROJECT_DIR$/src/main/java/com/devkoo/webservice/domain/account/Account.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/devkoo/webservice/dto/account/AccountMainResponseDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/devkoo/webservice/dto/account/AccountSaveRequestDto.java" />
@@ -594,6 +597,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/로그인 • Instagram_files/64e6a0af647c.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/app/signup.js" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/login.hbs" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/main.hbs" />
       </list>
     </option>
   </component>
@@ -736,7 +740,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542729427058" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542730432658" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -785,18 +789,18 @@
       <option name="presentableId" value="Default" />
       <updated>1542554808238</updated>
       <workItem from="1542554813516" duration="6074000" />
-      <workItem from="1542700477659" duration="10060000" />
+      <workItem from="1542700477659" duration="11065000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16134000" />
+    <option name="totallyTimeSpent" value="17139000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-527" y="-1080" width="2560" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14058776" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14058776" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -807,7 +811,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26950353" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26950353" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -866,13 +870,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.hbs" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/main.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/devkoo/webservice/web/WebRestController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -994,16 +991,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/devkoo/webservice/web/WebController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="38" column="66" lean-forward="true" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/로그인 • Instagram_files/c7548aaadfb8.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5071" />
@@ -1085,19 +1072,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/main.hbs">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="219" column="568" selection-start-line="219" selection-start-column="563" selection-end-line="219" selection-end-column="568" />
+        <state relative-caret-position="360">
+          <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/devkoo/webservice/web/WebController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="38" column="66" lean-forward="true" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="219" column="5317" selection-start-line="219" selection-start-column="5317" selection-end-line="219" selection-end-column="5317" />
+        <state relative-caret-position="199">
+          <caret line="219" column="1231" lean-forward="true" selection-start-line="219" selection-start-column="1143" selection-end-line="219" selection-end-column="1231" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#article#0;n#div#0;n#main#0;n#section#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/main.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="219" column="2906" selection-start-line="219" selection-start-column="2906" selection-end-line="219" selection-end-column="2906" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#article#0;n#main#0;n#section#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
