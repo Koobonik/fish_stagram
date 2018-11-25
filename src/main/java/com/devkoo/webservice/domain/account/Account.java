@@ -19,29 +19,22 @@ import javax.persistence.Id;
 public class Account extends BaseTimeEntity{
     @Id // 해당 테이블의 PK 필드를 나타냄
     @GeneratedValue // PK의 생성 규칙을 나타냄
-    private  Long usernum; //유저 수
-    // 테이블의 컬럼을 나타내면 굳이 선언하지 않더라도 해당 클래스의 필드는 모두 컬럼이 됨
-    // 사용하는 이유는 기본값 외에 추가로 변경이 필요한 옵션이 있을경우 사용함
-    // 문자열의 경우 VARCHAR(255)가 기본값인데, 사이즈를 500으로 늘리고 싶거나(ex: title), 타입을 TEXT로 변경하고 싶거나
+    private  Long usernum; // 로그인 횟수
 
-    //@Column(length = 50, nullable = false)
-    //private String id;
 
-    // 아이디 이메일 패스워드
+    // 아이디 패스워드
     // 이값들이 null 이면 회원가입 안됨.
     @Column(columnDefinition = "TEXT", nullable = false)
     private String userid;
-    //private String useremail;
     private String userpassword;
 
 
 
     // 해당 클래스의 빌더 패턴 클래스를 생성
     @Builder
-    public Account(Long usernum, String userid, String useremail, String userpassword){
+    public Account(Long usernum, String userid, String userpassword){
         this.usernum = usernum;
         this.userid = userid;
-        //this.useremail = useremail;
         this.userpassword = userpassword;
     }
 }

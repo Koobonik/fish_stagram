@@ -40,7 +40,7 @@ public class WebController { // 웹컨트롤러로써 GetMapping 이용해서 �
         return "login";
     }
 
-    // 테스트 페이지 : 회원 목록 조회
+    // 테스트 페이지 : 로그인할때 아이디 비밀번호 보여주는 페이지
     @RequestMapping(value="test", method = {RequestMethod.GET, RequestMethod.POST})
     public String test(Model model){
         model.addAttribute("account", accountService.findAllDesc());
