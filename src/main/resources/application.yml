@@ -19,8 +19,6 @@ spring:
       enabled: true
 # 운영 환경
 ---
-server:
-  port: 80
 spring:
   profiles: set1
 server:
